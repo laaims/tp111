@@ -1,0 +1,12 @@
+/Users/mac/tp111/lib/bin/Debug/net6.0/lib.deps.json
+/Users/mac/tp111/lib/bin/Debug/net6.0/lib.dll
+/Users/mac/tp111/lib/bin/Debug/net6.0/lib.pdb
+/Users/mac/tp111/lib/obj/Debug/net6.0/lib.csproj.AssemblyReference.cache
+/Users/mac/tp111/lib/obj/Debug/net6.0/lib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/tp111/lib/obj/Debug/net6.0/lib.AssemblyInfoInputs.cache
+/Users/mac/tp111/lib/obj/Debug/net6.0/lib.AssemblyInfo.cs
+/Users/mac/tp111/lib/obj/Debug/net6.0/lib.csproj.CoreCompileInputs.cache
+/Users/mac/tp111/lib/obj/Debug/net6.0/lib.dll
+/Users/mac/tp111/lib/obj/Debug/net6.0/refint/lib.dll
+/Users/mac/tp111/lib/obj/Debug/net6.0/lib.pdb
+/Users/mac/tp111/lib/obj/Debug/net6.0/ref/lib.dll
