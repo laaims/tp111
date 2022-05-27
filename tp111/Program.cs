@@ -7,65 +7,47 @@ namespace TP1
     //E1
     class Program {
         
-        static int min(int a, int b) => a < b ? a : b;
-
-        static void Multiplication()
+        static void Mult()
         {
-            Console.WriteLine("Table of ?:");
-            int N = Convert.ToInt32(Console.ReadLine());
-            while (N > 1000)
+            Console.WriteLine("Please enter a number: ");
+            int target = Convert.ToInt32(Console.ReadLine());
+            while (target >= 999)
             {
-                Console.WriteLine("Table of ?:");
-                N = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter a number: ");
+                target = Convert.ToInt32(Console.ReadLine());
             }
 
-            Console.WriteLine("Table of {0}", N);
-            for (int i = 1; i <= 10; i++)
+            Console.WriteLine("Table of {0}", target);
+            for (int k = 1; k <= 10; k++)
             {
-                Console.WriteLine("{0}*{1}={2}", i, N, i * N);
+                Console.WriteLine("{0}*{1}={2}", k, target, k * target);
             }
-
-
         }
 
-
-
-        private static int AskUserForParameter() {
-            Console.WriteLine("Please write a number and press enter :");
-            int.TryParse(Console.ReadLine(), out var result);
-            return result;
-        }
 
         static void E1(){
-            Multiplication();
+            Mult();
         }
         
         //E2
-
-        class NotAPrimeException : Exception{
-            public NotAPrimeException() {  }
-
-            public NotAPrimeException(int number) : base(String.Format("{0} is not a prime number.", number)) {}   
-        }
         static void printPrimes() {
-            Console.WriteLine("\nPrime from 1 and 1000 : ");
+            Console.WriteLine("\nPrimes from 1 to 1000 : ");
             for (int i = 2; i <= 1000; i++)
             {
-                bool Prime = true;
+                bool isPrime = true;
                 for (int j = 2; j <= Math.Sqrt(i); j++)
                 {
                     if (i % j == 0)
                     {
-                        Prime = false;
+                        isPrime = false;
                         break;
                     }
                 }
-                if (Prime == true)
+                if (isPrime)
                 {
                     Console.WriteLine(i);
                 }
             }
-            Console.WriteLine("\n --------------------------------- \n");
         }
 
         public static void fibonacci(int num) {
@@ -169,23 +151,8 @@ namespace TP1
                 Console.Write("\n");
             }
         }
-
-        static void E5(){
-            string jsonFilePath = "DOGE_AllDataPoints_3Days.json";
-            string json = File.ReadAllText(jsonFilePath);
-            var values = JsonSerializer.Deserialize<Dictionary<string,object> >(json);
-            
-            foreach(KeyValuePair<string, object> kvp in values) {
-                Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
-            }
-        }
         //
         static void Main(string[] args) {
-            // E1();
-            // E1();
-            // E1();
-            // E1();
-            E1();
         }
     }
 }
